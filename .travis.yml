@@ -1,3 +1,36 @@
+
+Skip to content
+
+    Pull requests
+    Issues
+    Marketplace
+    Explore
+
+    @Mah1ndra
+
+17
+585
+
+    142
+
+fossasia/meilix
+Code
+Issues 32
+Pull requests 0
+Insights
+meilix/.travis.yml
+6af5a27 27 days ago
+@vkartik97 vkartik97 Adjusting Invocation Lines for #291
+@meets2tarun
+@tabesin
+@abishekvashok
+@xeon-zolt
+@niccokunzmann
+@yukiisbored
+@vaibhavsingh97
+@mariobehling
+@vkartik97
+59 lines (49 sloc) 1.94 KB
 # This provides us with GCC binary support so we can run bash
 language: generic
 
@@ -44,8 +77,8 @@ deploy:
   - provider: releases
     skip_cleanup: true
     api_key:
-      secure: "fJmkIPnBSbitOnsJaXd0+EsJvCGMrV98abFDF1JyEpfs972ZhNg4n3bwUre3WgfU0S7gEQUlPBdnnro0k/R3uvvq2kxcBjlDF1slTU28UrPB3/Z638AwHeA088+cgmB9wYluDGILzXepvZ0e1/LD8klMzlZBuTlaxkRExTtA8mFotwWVX428cdyR3hnrORbRHyiRAPM392CZhCrgatD8KMKeIkTXzOzCyoOa2+/qS+kMBPK+xa7mkAGlOVuoPdleqh1tLLwmROaiZPvj/5N0N/4qnONUquFlzi4z9dhXjDx5Gbl1x/2bD3PJWpsps8lGTFRlSaRBtgsgHKz/h1+3O+w+QbIfZ/1w0ezolac09l7xMULoF2/WPqwILZdStFqa7GtfVtGV3yvGOF1ooziQp15RYLwWux+7tsm/TBcrtn1HMSSAYzyfOb0nl1J59gCwW8hosL5xj7MZpHP0BdvMk9p9NZTSC5piCR9f7b1GGs2Dz9qp3v3IL+G71nD+mQVj0dd9Dj40uRo/ugec15H/MI7jS6LMHcuMRN81A1ZlMaBZBZE8dIrUq8lxpmzjCZK/s6jm5yecmonDswfFxt96vxrNfhZAPQmMyAD3dzBmul8n7Ql1KiW4fZuPtexHI0zLdmhJakj+OH6LGaPIVtBngyq3w1FIBQtwfR9VTo9EEuE="  
-file_glob: true # http://stackoverflow.com/a/28579635/1320237
+      secure: "fJmkIPnBSbitOnsJaXd0+EsJvCGMrV98abFDF1JyEpfs972ZhNg4n3bwUre3WgfU0S7gEQUlPBdnnro0k/R3uvvq2kxcBjlDF1slTU28UrPB3/Z638AwHeA088+cgmB9wYluDGILzXepvZ0e1/LD8klMzlZBuTlaxkRExTtA8mFotwWVX428cdyR3hnrORbRHyiRAPM392CZhCrgatD8KMKeIkTXzOzCyoOa2+/qS+kMBPK+xa7mkAGlOVuoPdleqh1tLLwmROaiZPvj/5N0N/4qnONUquFlzi4z9dhXjDx5Gbl1x/2bD3PJWpsps8lGTFRlSaRBtgsgHKz/h1+3O+w+QbIfZ/1w0ezolac09l7xMULoF2/WPqwILZdStFqa7GtfVtGV3yvGOF1ooziQp15RYLwWux+7tsm/TBcrtn1HMSSAYzyfOb0nl1J59gCwW8hosL5xj7MZpHP0BdvMk9p9NZTSC5piCR9f7b1GGs2Dz9qp3v3IL+G71nD+mQVj0dd9Dj40uRo/ugec15H/MI7jS6LMHcuMRN81A1ZlMaBZBZE8dIrUq8lxpmzjCZK/s6jm5yecmonDswfFxt96vxrNfhZAPQmMyAD3dzBmul8n7Ql1KiW4fZuPtexHI0zLdmhJakj+OH6LGaPIVtBngyq3w1FIBQtwfR9VTo9EEuE="
+    file_glob: true # http://stackoverflow.com/a/28579635/1320237
     file: "/home/travis/${image_name}"
     on:
       all_branches: true
@@ -56,3 +89,20 @@ after_deploy:
   
 after_failure:
   - cd scripts && ./mail-fail.py
+
+    © 2018 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Help
+
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+
+Press h to open a hovercard with more details.
+
