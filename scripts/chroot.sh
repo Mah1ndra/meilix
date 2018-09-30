@@ -49,7 +49,7 @@ apt-get -qq -y install sddm
 # apt-get -qq -y install lightdm
 #apt-get -qq -y install xserver-xorg-video-intel
 
-
+update-alternatives --auto x-session-manager # display the current default xsession
 
 apt-get -qq -y --allow-unauthenticated install lxqt openbox 
 apt-get -qq -y --allow-unauthenticated install pcmanfm-qt 
@@ -57,7 +57,10 @@ apt-get -qq -y --allow-unauthenticated install lxqt-metapackage
 apt-get -qq -y --allow-unauthenticated install lxqt-admin lxqt-common lxqt-config lxqt-globalkeys lxqt-notificationd 
 apt-get -qq -y --allow-unauthenticated install lxqt-panel lxqt-policykit lxqt-powermanagement lxqt-qtplugin \
 apt-get -qq -y --allow-unauthenticated install lxqt-runner lxqt-session lxqt-sudo
-
+# minimal kwin
+apt-get -qq -y --allow-unauthenticated --no-install-recommends install kwin-x11 kwin-style-breeze kwin-addons systemsettings
+apt-get -qq -y --allow-unauthenticated install kde-style-breeze kde-style-breeze-qt4
+update-alternatives --verbose --set x-session-manager /usr/bin/lxqt-session
 
 #sudo apt-get install lightdm-gtk-greeter
 # set 
@@ -212,7 +215,7 @@ rm meilix-default-settings_1.0_all.deb
 rm meilix-metapackage_1.0-1_all.deb
 rm systemlock_0.1-1_all.deb plymouth-meilix-logo_1.0-1_all.deb plymouth-meilix-text_1.0-1_all.deb
 rm meilix-imclient_*_all.deb
-
+update-alternatives --auto x-session-manager # display the current default xsession
 # Why was this added?
 # apt-get remove --purge wget apt-transport-https
 
