@@ -1,41 +1,4 @@
-
-Skip to content
-
-    Pull requests
-    Issues
-    Marketplace
-    Explore
-
-    @Mah1ndra
-
-17
-585
-
-    142
-
-fossasia/meilix
-Code
-Issues 32
-Pull requests 0
-Insights
-meilix/.travis.yml
-6af5a27 27 days ago
-@vkartik97 vkartik97 Adjusting Invocation Lines for #291
-@meets2tarun
-@tabesin
-@abishekvashok
-@xeon-zolt
-@niccokunzmann
-@yukiisbored
-@vaibhavsingh97
-@mariobehling
-@vkartik97
-59 lines (49 sloc) 1.94 KB
-# This provides us with GCC binary support so we can run bash
 language: generic
-
-# Try to supply the packages from Travis so that when we run build.sh we won't
-# be required to download them again.
 include:
   - os: linux
     addons:
@@ -89,20 +52,3 @@ after_deploy:
   
 after_failure:
   - cd scripts && ./mail-fail.py
-
-    © 2018 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Status
-    Help
-
-    Contact GitHub
-    Pricing
-    API
-    Training
-    Blog
-    About
-
-Press h to open a hovercard with more details.
-
